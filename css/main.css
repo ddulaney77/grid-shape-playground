@@ -56,7 +56,8 @@
  grid-column: 2;
  grid-row: 3;
 }
-.circle {
+.circle,
+.circle-1 {
   max-width: 100%;
   height: 200px;
   width: 200px;
@@ -75,4 +76,31 @@ p {
   font-size: 48px;
   color: black;
   text-align: center;
+}
+
+.circle-1 img {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 50%;
+  justify-content: center;
+  opacity: 0;
+  transition-delay: 1s;
+  animation-name: blonde;
+  animation: blonde;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  margin: auto;
+
+}
+
+@keyframes blonde {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
